@@ -1,20 +1,25 @@
 {
-
   "manifest_version": 2,
   "name": "Hero Forgery",
   "version": "1.0",
-
   "description": "Hero Forgery download plugin.",
-
   "icons": {
     "48": "icons/hero-forgery-icon.png"
   },
-
   "content_scripts": [
     {
-      "matches": ["*://*.heroforge.com/*"],
-      "js": ["hero-forgery.js"]
+      "matches": [
+        "*://*.heroforge.com/*"
+      ],
+      "js": [
+        "hero-forgery.js"
+      ]
     }
-  ]
-
+  ],
+  "background": {
+    "scripts": [
+      "three.min.js",
+      "three.module.js"
+    ]
+  }
 }
