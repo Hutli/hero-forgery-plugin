@@ -50736,5 +50736,4 @@ if (typeof __THREE_DEVTOOLS__ !== 'undefined') {
 		}
 	}));
 	/* eslint-enable no-undef */
-
 }
